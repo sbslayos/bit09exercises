@@ -1,23 +1,9 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import './App.css'
-import './components/home'
-import {Nav} from './components/Nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap-icons/font-bootstrap-icons.css'
+import { Nav } from './components/Nav';
 
 function App() {
-  return (
-    <BrowserRouter>
-    <nav>
-      <Link to="/home">
-        Inicio
-      </Link>
+  return <Nav />;
+}
 
-    </nav>
-    <Routes>
-      <Route path='/.'>
-      </Route>
-    </Routes>
-    </BrowserRouter>
-
-)}
-
-export default App
+export default App;
