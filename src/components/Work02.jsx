@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Exercise3 = () => {
+export const Work02 = () => {
   return (
     <div><h1>Exercise3</h1></div>
   )
