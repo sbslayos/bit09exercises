@@ -10,7 +10,7 @@ export const Page = () => {
 
   return (
   
-  <section>
+  <section className='text-center'>
       <h1>Ejercicios React</h1>
       
       

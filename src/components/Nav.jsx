@@ -6,7 +6,7 @@ import { Page } from './Page';
 export const Nav = () => {
   return (
     <BrowserRouter>
-      <nav>
+      <nav className='text-center' >
         <Link to='/'>Inicio</Link>
         <Link to='/Page'>Ejercicios</Link>
         <Link to =''></Link>

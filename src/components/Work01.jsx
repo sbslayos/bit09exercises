@@ -7,27 +7,25 @@ export const Work01 = () => {
     const [color, setColor] = useState("null")
 
     useEffect(() => {
-        if (contador > 0) setColor('success');
-            else if (contador < 0 ) setColor('warning');
-            else setColor('secondary');
+        if (contador > 0) setColor("success");
+            else if (contador < 0 ) setColor("danger");
+            else setColor("secondary");
     }, [contador]);
     
 
 
   return (
-    <section>
-    <div>Ejercicio 1 - CONTADOR</div>
-    <h2>
-    Count
+    <section className='text-center'>
 
-    <Badge bg={color}>{contador}</Badge>
-    </h2>
-    <Button onClick={() => setContador(contador + 1)}>Aumentar</Button>
-    <Button onClick={() => setContador(0)} >Reset</Button>
-    <Button onClick={() => setContador(contador -1)}>Restar</Button>
-    
+    <h3>
+        Count <Badge bg={color} variant={color} >{contador}</Badge>
+    </h3>
+    <Button variant="danger" onClick={() => setContador(contador -1)}>Restar</Button>
+    <Button variant="outline-secondary" onClick={() => setContador(0)} >Reset</Button>
+    <Button variant="primary" onClick={() => setContador(contador + 1)}>Aumentar</Button>
+
     </section>
-    );
+  );
 };
 
 export default Work01
